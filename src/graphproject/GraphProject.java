@@ -1,21 +1,19 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package graphproject;
 
-/**
- *
- * @author Rengetsu
- */
-public class GraphProject {
+import javax.swing.JFrame;
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+public class GraphProject {
+    public static void main(String[] args){
+        //Window window = new Window();
+        
+        JFrame frame = new JFrame("Function Grapher");
+        //frame.add(window);
+        frame.setResizable(false);
+        frame.pack();
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setLocationRelativeTo(null);
+        frame.setVisible(true);
+        
+        //new Thread(window).start();
     }
-    
 }
